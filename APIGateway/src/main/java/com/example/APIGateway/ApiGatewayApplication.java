@@ -27,6 +27,7 @@ public class ApiGatewayApplication {
 
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		source.registerCorsConfiguration("/**", config); // Allow all paths
+	//	source.registerCorsConfiguration("/api/v1/people/**", config);
 
 		return new CorsWebFilter(source);
 	}
