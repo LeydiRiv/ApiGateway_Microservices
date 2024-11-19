@@ -20,15 +20,17 @@ public class ApiGatewayApplication {
 	public CorsWebFilter corsFilter() {
 		CorsConfiguration config = new CorsConfiguration();
 		config.setAllowCredentials(true);
-//		config.addAllowedOrigin("http://127.0.0.1:5500"); //Allow requests from fronted
 		config.addAllowedOrigin("http://localhost:4200"); // //Allow requests from fronted
 		config.addAllowedHeader("*"); // Allow all headers
 		config.addAllowedMethod("*"); // Allow all methods
 
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		source.registerCorsConfiguration("/**", config); // Allow all paths
-	//	source.registerCorsConfiguration("/api/v1/people/**", config);
 
 		return new CorsWebFilter(source);
 	}
+
+
+
+
 }
