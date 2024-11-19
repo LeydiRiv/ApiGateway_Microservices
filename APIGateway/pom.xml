@@ -67,6 +67,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -87,5 +88,8 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
+
 
 </project>
